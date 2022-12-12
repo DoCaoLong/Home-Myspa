@@ -1,0 +1,294 @@
+.modal {
+    display: none;
+}
+.modal-open .modal {
+    z-index: 999999999;
+}
+
+.branch-app.item.popup-combo {
+    border-radius: 16px;
+    overflow: hidden;
+}
+.carousel-control.left {
+    left: -80px !important;
+    z-index: 1;
+}
+.carousel-control.right {
+    right: -80px !important;
+    z-index: 1;
+}
+/* .popup-combo.item{
+    position: relative; 
+    width: 100%;
+    max-width: 1024px;
+    height: auto;
+} */
+.form-branch-app {
+    position: absolute;
+    left: 40px;
+    top: 0;
+    bottom: 0;
+    height: fit-content;
+    margin: auto;
+
+    max-width: 481px;
+    background: #7161ba;
+
+    /* Drop shardow */
+    box-shadow: -3px 5px 20px rgba(113, 97, 186, 0.15);
+    border-radius: 32px;
+    overflow: hidden;
+    width: calc(100% / 3);
+    transition: all 0.3s ease-out;
+}
+
+.form-branch-app form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    background-color: #f5f5f7;
+}
+.form-branch-app form .input img.icon {
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+}
+.form-branch-app > .title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #f5f5f7;
+    /* or 137% */
+    text-align: center;
+    letter-spacing: -0.02em;
+    background: #5732a5;
+    padding: 20px;
+}
+.form-branch-app > .title p {
+    max-width: 393px;
+    margin: auto;
+}
+.form-branch-app form .input {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eeedf2;
+}
+.form-branch-app form .input:first-child {
+    padding-top: 20px;
+}
+.form-branch-app form .input:nth-child(6) {
+    padding-bottom: 0;
+}
+.form-branch-app form .input input {
+    border: none;
+    background-color: transparent;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 24px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+input.warning {
+    /* border-color: rgb(132, 53, 52); */
+    margin-right: 5px;
+    box-shadow: rgb(0 0 0 / 8%) 0px 1px 1px inset, rgb(206 132 131) 0px 0px 6px;
+}
+.form-branch-app form .input input::placeholder {
+    color: #a2a1ab;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 24px;
+}
+#popup_combo .branch-app .close {
+    top: 0;
+    right: 20px;
+}
+.sub-desc {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+.sub-desc .red-text {
+    letter-spacing: -0.02em;
+    color: #ea6b1e;
+    margin-right: 4px;
+}
+.sub-desc .red-text ~ p {
+    color: #7161ba;
+}
+.form-branch-app .btn-submit .submit_branch_app.action-button {
+    background: #7161ba;
+    border-radius: 44px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: #f5f5f7;
+}
+.form-branch-app .view-more {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: #7161ba;
+    padding-top: 5px;
+}
+.errors_log {
+    color: #f15252;
+    display: none;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 24px;
+}
+.popup-combo.item img.pop-up-mobile {
+    display: none;
+    width: 100%;
+}
+.carousel-inner {
+    z-index: 2;
+}
+@media (max-width: 1100px) {
+    .carousel-control.left {
+        left: -11px !important;
+        z-index: 2;
+        width: 50px;
+    }
+    .carousel-control.right {
+        right: -11px !important;
+        z-index: 2;
+        width: 50px;
+    }
+}
+@media (max-width: 920px) {
+    .popup-combo.item.branch-app {
+        /* background-color: ; */
+        transition: transform 0.3s ease-in-out;
+    }
+    .popup-combo.item img.branch-img-pop-up {
+        display: none;
+    }
+    .popup-combo.item img.pop-up-mobile {
+        display: block;
+    }
+    .form-branch-app {
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+    .sub-desc .red-text ~ p {
+        font-size: 12px;
+    }
+    .sub-desc {
+        display: flex;
+        align-items: center;
+        grid-gap: 0 4px;
+    }
+    #popup_combo .modal-content {
+        margin-top: 10px;
+    }
+    .modal-body {
+        padding: 0;
+    }
+
+    .branch-app.item.popup-combo {
+        max-height: 70vh;
+        overflow: scroll;
+    }
+    .branch-app.item.popup-combo::-webkit-scrollbar {
+        display: none;
+    }
+
+    .popup-combo.item.branch-app {
+        background: linear-gradient(#7ddb2b, #a5e967);
+        padding-bottom: 10px;
+    }
+    .popup-combo.item.branch-app.app-design {
+        background: linear-gradient(#9289ca, #5f52a3);
+        padding-top: 20px;
+    }
+    .popup-combo.item.branch-app.app-design img.pop-up-mobile {
+        padding: 0 20px;
+    }
+    .form-branch-app {
+        margin-top: -40px;
+        width: 85%;
+    }
+    .popup-combo.item.branch-app.app-design .form-branch-app {
+        width: 85%;
+        margin-top: 10px;
+    }
+    .form-branch-app > .title {
+        font-size: 20px;
+        padding: 10px;
+    }
+    .form-branch-app form .input:first-child {
+        padding-top: 10px;
+    }
+    .form-branch-app form .input {
+        margin-bottom: 5px;
+    }
+    .form-branch-app .btn-submit .submit_branch_app.action-button {
+        background: #3e178c;
+        font-size: 16px;
+        padding: 8px;
+    }
+    #popup_combo .branch-app .close {
+        right: 12px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .form-branch-app > .title p {
+        font-size: 16px;
+        font-family: Montserrat;
+        font-weight: bold;
+    }
+    .branch-app.item.popup-combo {
+        max-height: unset;
+        overflow: scroll;
+    }
+}
+
+@media (max-width: 479px) {
+    .form-branch-app > .title p {
+        font-size: 14px;
+        font-family: Montserrat;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    .carousel-control.left,
+    .carousel-control.right {
+        height: 30%;
+        margin: auto;
+    }
+    .carousel-control.left {
+        left: -5px !important;
+        z-index: 2;
+        width: 50px;
+    }
+    .carousel-control.right {
+        right: -5px !important;
+        z-index: 2;
+        width: 50px;
+    }
+}

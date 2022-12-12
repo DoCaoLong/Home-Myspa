@@ -1,0 +1,20 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+Disallow: /files/avatar/
+Disallow: /files/db/
+Disallow: /files/temp/
+Disallow: /application/
+Disallow: /system/
+Disallow: /all-spa/
+Disallow: /tu-van/
+Disallow: /spa-plus/
+Disallow: /blog/blog/
+Disallow: /spa-chung/
+Disallow: /trai-nghiem/
+Disallow: /blog/page/6/
+Disallow: /bower_components/
+Disallow: /blog/category/uncategorized/
+Disallow: /blog/author/hiepnghiem/
+
+Sitemap: https://www.myspa.vn/sitemap.xml
+Sitemap: https://myspa.vn/sitemap.xml

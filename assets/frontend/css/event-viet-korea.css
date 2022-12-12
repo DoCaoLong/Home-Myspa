@@ -1,0 +1,192 @@
+.event-viet-korea {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.event-viet-korea p {
+    padding: 0;
+    margin: 0;
+}
+.form-event_wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 33.33%;
+}
+.form-event_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    background-color: #200001;
+    width: 80%;
+    border-radius: 16px;
+}
+.form-event_img {
+    position: absolute;
+    top: -84px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+}
+.form-event_header {
+    padding: 24px 0;
+    background-image: linear-gradient(#631a1a, #350201);
+    text-align: center;
+    border-radius: 16px 16px 0 0;
+    overflow: hidden;
+}
+.form-event_title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ebd594;
+}
+.event-viet-korea .form-event_text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding-top: 16px;
+}
+.form-event {
+    padding: 4px 24px 24px 24px;
+}
+.input-wrap {
+    padding: 4px 0;
+}
+.input-wrap input,
+.event-viet-korea .form-select {
+    width: 100%;
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+    padding: 8px 0;
+}
+.input-wrap input {
+    color: #ebd594;
+    padding-left: 4px;
+}
+.event-viet-korea .form-select {
+    cursor: pointer;
+    color: #fff;
+}
+.event-viet-korea .form-select option {
+    color: #350201;
+}
+.input-wrap input::placeholder {
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+.form-btn_wrap {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.form-event_btn {
+    padding: 8px 24px;
+    background-image: linear-gradient(#631a1a, #350201);
+    border: 0;
+    outline: 0;
+    color: #ebd594;
+    font-size: 18px;
+    border-radius: 24px;
+    font-weight: bold;
+    width: max-content;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.form-event_btn:hover {
+    background-image: linear-gradient(#350201, #631a1a);
+    transition: all 0.3s ease;
+    color: #ebd594;
+}
+.form-event-submi {
+    display: flex;
+    justify-content: center;
+}
+.form-event-submit button {
+    position: absolute;
+    bottom: 116px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 16px 28px;
+    background-color: #a9d470;
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    border: 0;
+    outline: 0;
+    width: max-content;
+    border-radius: 100px;
+    text-transform: uppercase;
+    box-shadow: rgb(255 255 255 / 51%) 0px 0px 24px;
+    transition: all 0.3s all;
+}
+.form-event-submit button:hover {
+    background-color: #e5ffb9;
+    transition: all 0.3s all;
+}
+.form-event-submit:first-child,
+.form-event_img-mb {
+    display: none;
+}
+.form-event-submit button:hover {
+    color: #fff;
+}
+@media screen and (max-width: 767.98px) {
+    .form-event_wrap {
+        display: none;
+    }
+    .form-event_box {
+        position: unset;
+        top: unset;
+        left: unset;
+        transform: unset;
+        background-color: #200001;
+        width: 100%;
+        margin-top: unset;
+        border-radius: unset;
+    }
+    .form-event_header {
+        padding: 12px 0;
+    }
+    .form-event_title {
+        font-size: 16px;
+    }
+    .input-wrap input,
+    .event-viet-korea .form-select {
+        font-size: 12px;
+    }
+    .input-wrap input::placeholder,
+    .form-select {
+        font-size: 12px;
+    }
+    .form-event-submit button {
+        padding: 4px 16px;
+        font-size: 10px;
+        bottom: 30px;
+    }
+    .form-event-submit.top {
+        top: 200px;
+        left: 73px;
+        position: absolute;
+        display: block;
+    }
+
+    .form-event_img-mb {
+        display: block;
+        position: absolute;
+        top: 96px;
+        left: 50px;
+        width: 40px;
+    }
+}

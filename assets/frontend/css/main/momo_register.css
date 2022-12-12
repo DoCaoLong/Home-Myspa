@@ -1,0 +1,287 @@
+.main-momo {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background: url(../../../frontend/images/popup/form-popup-free-marketing-1.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body.modal-open {
+    height: 100vh;
+    overflow-y: hidden;
+    /* position: fixed; */
+}
+/* marketing custom */
+.main-marketing {
+    background: url(../../../frontend/images/popup/momo_marketing_register.png);
+}
+.main-marketing .popup-combo.momo-register {
+    background: linear-gradient(135deg, #cdcbff 35%, #7163b7 65%);
+}
+.main-marketing .popup-combo .branch-img-pop-up {
+    transform: scale(0.6) translateX(38%);
+}
+/* end */
+.main-momo .backdrop-filter {
+    position: fixed;
+    inset: 0;
+    backdrop-filter: blur(10px);
+    background-color: #8883ff6b;
+}
+.popup-combo.momo-register {
+    border-radius: 16px;
+    overflow: hidden;
+    width: fit-content;
+    position: relative;
+    z-index: 1;
+    /* -webkit-box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+    box-shadow: 0 5px 15px rgb(0 0 0 / 50%); */
+}
+
+.momo-register .form-branch-app {
+    left: 20px;
+    width: calc(100% * 3 / 7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: fit-content;
+    margin: auto;
+    max-width: 481px;
+    background: #7161ba;
+    box-shadow: -3px 5px 20px rgb(113 97 186 / 15%);
+    border-radius: 32px;
+    /* overflow: hidden; */
+    transition: all 0.3s ease-out;
+}
+
+.momo-register .decor-popup-noel1 {
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+}
+.momo-register .decor-popup-noel2 {
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+    width: 30%;
+}
+.momo-register .form-branch-app > .title {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #7161ba;
+    background: #e3e1f1;
+    padding: 24px 0;
+    border-radius: 32px 32px 0 0;
+}
+.momo-register .form-branch-app > .title > p {
+    margin: 0;
+}
+.momo-register .form-branch-app > form {
+    padding: 20px 20px 10px;
+}
+.momo-register .form-branch-app .table-label:first-child {
+    margin-top: 0;
+}
+.momo-register .form-branch-app .table-label {
+    /* background: #E3E1F1; */
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #7161ba;
+    margin-top: 10px;
+}
+.momo-register .form-branch-app form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 0;
+    background-color: #f5f5f7;
+    border-radius: 0 0 32px 32px;
+}
+.momo-register .form-branch-app form .input {
+    margin-bottom: 0;
+}
+.momo-register .form-branch-app form .input input {
+    border: none;
+    background-color: transparent;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 24px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+/* .momo-register .form-branch-app form .input:first-child {
+    padding-top: 20px;
+} */
+.momo-register .form-branch-app form .input {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    /* margin-bottom: 10px; */
+    border-bottom: 1px solid #eeedf2;
+}
+.errors_log {
+    color: #f15252;
+    display: none;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.momo-register .form-branch-app .btn-submit .submit_momo {
+    background: #7161ba;
+    border-radius: 44px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    padding: 10px 0;
+    margin-top: 20px;
+    color: #f5f5f7;
+}
+.popup-combo.momo-register.item img.pop-up-mobile {
+    display: none;
+    width: 100%;
+}
+.momo-register .form-branch-app form .input img.icon {
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+}
+.momo-register .form-branch-app .btn-submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.momo-register .form-branch-app .view-more {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: #7161ba;
+    padding: 10px 0;
+}
+.popup-combo.momo-register .decor-popup-tree {
+    display: none;
+}
+@media (max-width: 920px) {
+    #popup_combo .modal-content {
+        margin-top: 20px;
+    }
+    #popup_combo .modal-content button {
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #popup_combo .modal-content button > img {
+        width: 24px;
+        height: 24px;
+    }
+    .momo-register .decor-popup-noel1 {
+        display: none;
+    }
+    .momo-register .decor-popup-noel2 {
+        display: none;
+    }
+    .main-momo {
+        background-image: url(../../../frontend/images/popup/mobile-form-popup-free-marketing-1.jpg);
+        background-position: top;
+    }
+    .main-marketing {
+        background: url(../../../frontend/images/popup/momo_marketing_register_mobile.png);
+        background-position: center;
+        background-size: contain;
+    }
+    .popup-combo.momo-register {
+        max-height: unset;
+        /* overflow-y: scroll; */
+        width: calc(100vw - 48px);
+        background-color: #3f2194;
+        /* background: url(../../../frontend/images/popup/bg-noel-mb.png); */
+    }
+    .popup-combo.momo-register.item img.branch-img-pop-up {
+        display: none;
+    }
+    .popup-combo.momo-register.item img.pop-up-mobile {
+        display: block;
+    }
+    .momo-register .form-branch-app {
+        margin-top: 0px;
+        margin-bottom: 12px;
+        width: 85%;
+        position: relative;
+        left: 0;
+    }
+    .momo-register .form-branch-app > .title {
+        font-size: 28px;
+        line-height: 1.5;
+        padding: 16px 0;
+    }
+    .momo-register .form-branch-app form {
+        padding: 8px 12px 0;
+    }
+    .popup-combo.momo-register .decor-popup-tree {
+        position: absolute;
+        right: -52px;
+        bottom: -32px;
+        width: 100px;
+        display: block;
+    }
+    .popup-combo img {
+        width: auto;
+    }
+}
+@media (max-width: 479px) {
+    .main-momo {
+        background: unset;
+    }
+    .momo-register .form-branch-app > .title > p {
+        font-size: 16px;
+    }
+    .main-momo .backdrop-filter {
+        display: none;
+    }
+    .main-momo .popup-combo.momo-register {
+        max-height: unset;
+        width: 100%;
+        border-radius: unset;
+    }
+    .momo-register .form-branch-app > .title {
+        font-size: 24px;
+        line-height: 1;
+    }
+    .momo-register .form-branch-app .table-label {
+        font-size: 14px;
+        line-height: 1;
+        margin-top: 8px;
+    }
+}
+.popup-combo.momo-register::-webkit-scrollbar {
+    display: none;
+}
+@media screen and (max-width: 376px) {
+    .popup-combo.momo-register {
+        overflow-y: scroll;
+        height: 85vh;
+    }
+}

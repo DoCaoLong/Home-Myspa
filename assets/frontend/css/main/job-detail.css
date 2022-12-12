@@ -1,0 +1,538 @@
+.jobDe-page,
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+.jobDe-page {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    font-style: normal;
+}
+.jobDe-page button {
+    width: max-content;
+}
+.jobDe-page img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+.jobDe-page p,
+.jobDe-page h1,
+.jobDe-page h2,
+.jobDe-page h3,
+.jobDe-page h4,
+.jobDe-page h5,
+.jobDe-page h6 {
+    overflow-wrap: break-word;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+a {
+    text-decoration: none;
+}
+.jobDe-page {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.jobDe-page .container {
+    max-width: 822px;
+    padding: 0 16px;
+    margin: 0 auto;
+    margin-top: 72px;
+}
+.jobDe-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+    color: #7161ba;
+    margin: 72px 0 10px 0;
+}
+.jobDe-page .jobDe-info {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    letter-spacing: -0.02em;
+    color: #3b3a40;
+    padding-bottom: 24px;
+    margin-top: 6px;
+    border-bottom: 1px solid #eeedf2;
+}
+.jobDe-page .jobDe-desc {
+    margin-top: 42px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    color: #616069;
+}
+.jobDe-job_desc {
+    margin-top: 42px;
+}
+.jobDe-page .job-desc_title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: justify;
+    letter-spacing: -0.02em;
+    color: #3b3a40;
+    margin-bottom: 16px;
+}
+.jobDe-job_desc ul,
+.jobDe-job_requi ul {
+    padding-left: 76px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 8px 0;
+    margin-top: 16px;
+}
+.jobDe-job_desc ul li,
+.jobDe-job_requi ul li {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    color: #101012;
+    list-style: disc;
+}
+.jobDe-job_desc ul li::marker,
+.jobDe-job_requi ul li::marker {
+    color: #7161ba;
+    font-size: 22px;
+}
+.jobDe-job_requi {
+    margin-top: 56px;
+}
+.jobDe-btn_wrap {
+    margin: 48px 0 0 0;
+}
+.jobDe-btn {
+    padding: 12px 20px;
+    background-color: #7fc128;
+    border-radius: 50px;
+    border: 2px solid #7fc128;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: #f5f5f7;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.jobDe-btn:hover {
+    background-color: #fff;
+    border: 2px solid #7fc128;
+    background-color: #eeedf2;
+    color: #7fc128;
+    transition: all 0.3s linear;
+}
+.jobDe-btn.active-btn {
+    background-color: #fff;
+    border: 2px solid #7fc128;
+    background-color: #eeedf2;
+    color: #7fc128;
+    transition: all 0.3s linear;
+}
+.jobDe-recoment {
+    margin: 32px 0 32px 0;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    color: #3b3a40;
+}
+.recoment-list {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 8px 0;
+    padding-bottom: 152px;
+    margin-top: 32px;
+}
+.recoment-item {
+    list-style: disc;
+    cursor: pointer;
+}
+.recoment-item a {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: #7161ba;
+    transition: 0.1s ease-in;
+}
+.recoment-item a:hover,
+.recoment-item:hover::marker {
+    color: #7fc128;
+    transition: 0.1s ease-in;
+}
+.recoment-item::marker {
+    color: #7161ba;
+    font-size: 22px;
+    transition: 0.1s ease-in;
+}
+
+/* form */
+
+.jobDe-wrap_input {
+    display: flex;
+    flex-direction: column;
+}
+.jobDe-wrap_input label[required] {
+    order: 1;
+}
+.jobDe-wrap_input input[required] {
+    order: 2;
+}
+.jobDe-wrap_input input[required] + label::after {
+    content: "*";
+    color: #ee6955;
+}
+.jobDe-wrap_input .required-text_file {
+    order: 4;
+}
+.jobDe-wrap_input.error-text-valid > .jobDe-text_error {
+    display: block;
+}
+.jobDe-wrap_input.error-text-valid > input,
+.jobDe-wrap_input.error-text-valid > .jobDe-cus_label {
+    border: 1px solid #ee6955 !important;
+}
+.jobDe-wrap_input .jobDe-text_error {
+    order: 3;
+    margin-top: 6px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #ee6955;
+    display: none;
+}
+.jobDe-form {
+    background: #ffffff;
+    box-shadow: -9px 17px 52px rgba(113, 97, 186, 0.17);
+    border-radius: 20px;
+    height: 0px;
+    padding: 28px 28px 42px 28px;
+    opacity: 0;
+    visibility: hidden;
+    transition: height opacity visibility 0.3s ease-out;
+}
+.jobDe-form.active-form-job {
+    height: max-content;
+    opacity: 1;
+    visibility: visible;
+    margin: 36px 0 72px 0;
+    transition: all 0.3s ease-in;
+}
+.jobDe-form form {
+    display: none;
+}
+.jobDe-form.active-form-job form {
+    display: block;
+}
+.jobDe-wrap:nth-child(1),
+.jobDe-wrap:nth-child(2) {
+    width: 100%;
+    display: flex;
+    grid-gap: 0 24px;
+}
+.jobDe-wrap:nth-child(1) .jobDe-wrap_input:nth-child(1) {
+    width: 66.66%;
+}
+.jobDe-wrap:nth-child(1) .jobDe-wrap_input:nth-child(2) {
+    width: 33.33%;
+}
+.jobDe-wrap:nth-child(1) .jobDe-wrap_input:nth-child(2) input {
+    max-height: 50px;
+    color: #a2a1ab;
+    text-transform: uppercase;
+    cursor: text;
+}
+.jobDe-wrap:nth-child(2) .jobDe-wrap_input:nth-child(1) {
+    width: 33.33%;
+}
+.jobDe-wrap:nth-child(2) .jobDe-wrap_input:nth-child(2) {
+    width: 66.66%;
+}
+.jobDe-wrap:not(:last-child) {
+    margin-bottom: 24px;
+}
+.jobDe-wrap_input input,
+.jobDe-wrap_input textarea {
+    width: 100%;
+    padding: 12px 20px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    background: #ffffff;
+    color: #3b3a40;
+    border: 1px solid #e2e1e8;
+    border-radius: 10px;
+    margin-top: 8px;
+}
+.jobDe-wrap_input input:focus,
+.jobDe-wrap_input textarea:focus {
+    border: 1px solid #7161ba;
+    -webkit-box-shadow: 0 0 0 4px #e3e1f1;
+    box-shadow: 0 0 0 4px #e3e1f1;
+}
+.jobDe-wrap_input input::-webkit-input-placeholder,
+.jobDe-wrap_input textarea::-webkit-input-placeholder {
+    /* Edge */
+    color: #a2a1ab;
+}
+.jobDe-wrap_input input::-webkit-input-placeholder,
+.jobDe-wrap_input textarea:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #a2a1ab;
+}
+.jobDe-wrap_input input::-webkit-input-placeholder,
+.jobDe-wrap_input textarea::placeholder {
+    color: #a2a1ab;
+    font-weight: 500;
+}
+.jobDe-wrap_input textarea {
+    resize: none;
+}
+.jobDe-wrap_input label,
+.input-type_label {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: #3b3a40;
+}
+.required-text_file {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #a2a1ab;
+    margin-top: 4px;
+}
+.jodDe-btn_wrap {
+    display: flex;
+    justify-content: center;
+}
+.jodDe-btn_wrap {
+    margin-top: 42px;
+}
+.jodDe-btn_wrap button {
+    padding: 12px 20px;
+    background: #7161ba;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: #f5f5f7;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    border: 2px solid #7161ba;
+}
+.jodDe-btn_wrap button:hover {
+    background-color: #eeedf2;
+    border: 2px solid #7161ba;
+    color: #7161ba;
+    transition: all 0.3s linear;
+}
+.inputfile {
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: 2;
+    max-width: 734px;
+    cursor: pointer;
+}
+.inputfile ~ .jobDe-cus_label .jobDe-cus_label-btn {
+    transition: 0.2s ease-out;
+}
+.inputfile:hover ~ .jobDe-cus_label .jobDe-cus_label-btn {
+    opacity: 0.7;
+    transition: 0.2s ease-in;
+}
+.jobDe-wrap:nth-child(3) .jobDe-cus_label {
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #a2a1ab;
+    background: #ffffff;
+    /* border: 1px solid #ee6955; */
+    border: 1px solid #e2e1e8;
+    border-radius: 10px;
+    margin: 8px 0 0 0;
+}
+.jobDe-wrap:nth-child(3) .jobDe-cus_label::after {
+    display: none;
+}
+.jobDe-cus_label .jobDe-cus_label-text {
+    padding: 12px 0 12px 20px;
+}
+.input-type_label::after {
+    content: "*";
+    color: #ee6955;
+}
+.jobDe-cus_label {
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+.jobDe-cus_label-btn {
+    padding: 12px 34px;
+    cursor: pointer;
+    background: #7161ba;
+    border-radius: 0 10px 10px 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: #f5f5f7;
+    border: 0;
+    outline: 0;
+    pointer-events: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    display: block;
+    background-image: url(../../images/job/job-detail-calendar.png);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* close form */
+
+@media screen and (max-width: 1023.98px) {
+    .jobDe-page .inputfile {
+        position: unset;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .jobDe-page .jobDe-title {
+        font-size: 18px !important;
+        line-height: 28px;
+        color: #3b3a40;
+    }
+    .jobDe-page .jobDe-info {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 15px 24px;
+        background: #e2e1e8;
+        border-radius: 10px;
+        color: #7161ba;
+        border-bottom: 0;
+        margin-top: 20px;
+    }
+    .jobDe-page .jobDe-desc {
+        font-size: 12px;
+        line-height: 20px;
+        margin-top: 24px !important;
+    }
+    .jobDe-page .job-desc_title {
+        font-size: 16px;
+    }
+    .jobDe-page .jobDe-job_desc {
+        margin-top: 24px;
+    }
+    .jobDe-job_desc ul,
+    .jobDe-job_requi ul {
+        padding-left: 36px;
+        grid-gap: 4px 0;
+    }
+    .jobDe-job_desc ul li,
+    .jobDe-job_requi ul li {
+        font-size: 12px;
+        line-height: 20px;
+        text-align: left;
+    }
+    .jobDe-page .jobDe-job_requi {
+        margin-top: 37px;
+    }
+    .jobDe-page .jobDe-job_requi {
+        padding-bottom: 32px;
+        border-bottom: 1px solid #eeedf2;
+    }
+    .jobDe-page .jobDe-btn {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+    .jobDe-page .jobDe-btn_wrap {
+        display: flex;
+        justify-content: center;
+        margin-top: 24px;
+    }
+    .jobDe-page .jobDe-recoment {
+        margin: 24px 0 16px 0;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .jobDe-page .recoment-item {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .jobDe-page .recoment-list {
+        padding-bottom: 72px;
+    }
+    .jobDe-wrap:not(:last-child) {
+        flex-direction: column;
+        grid-gap: 16px 0;
+    }
+    .jobDe-page .inputfile {
+        display: none;
+    }
+    .jobDe-wrap:nth-child(1) .jobDe-wrap_input:nth-child(1),
+    .jobDe-wrap:nth-child(1) .jobDe-wrap_input:nth-child(2),
+    .jobDe-wrap:nth-child(2) .jobDe-wrap_input:nth-child(1),
+    .jobDe-wrap:nth-child(2) .jobDe-wrap_input:nth-child(2) {
+        width: 100%;
+    }
+    .jobDe-wrap:not(:last-child) {
+        margin-bottom: 16px;
+    }
+    .jobDe-cus_label-btn {
+        padding: 10px 14px;
+        width: max-content;
+    }
+    .jobDe-cus_label-btn span {
+        font-size: 14px;
+        line-height: unset;
+        padding: unset;
+    }
+    .jodDe-btn_wrap button {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+    .jobDe-wrap_input input,
+    .jobDe-wrap_input textarea,
+    .jobDe-cus_label .jobDe-cus_label-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .jobDe-input_date {
+        min-width: calc(100% - 16px);
+        max-width: 100%;
+        height: 44px;
+        text-align: left;
+        font-size: 14px;
+        text-transform: capitalize !important;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .jobDe-page .container {
+        width: 100% !important;
+        margin-top: 24px;
+    }
+}

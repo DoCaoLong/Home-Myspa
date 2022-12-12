@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>https://myspa.vn</loc>
+  <changefreq>daily</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://myspa.vn/ve-chung-toi</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://myspa.vn/phan-mem-quan-ly-spa</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://myspa.vn/phan-mem-quan-ly-phong-kham</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://myspa.vn/phan-mem-quan-ly-salon-toc</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://myspa.vn/phan-mem-quan-ly-tiem-nails</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://myspa.vn/thiet-ke-app-thuong-hieu</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://myspa.vn/nen-tang-kinh-doanh-nganh-lam-dep</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://myspa.vn/bang-gia</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://myspa.vn/blog</loc>
+  <changefreq>daily</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://myspa.vn/ho-tro</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://myspa.vn/login</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.50</priority>
+</url>
+<url>
+  <loc>https://myspa.vn/dieu-khoan-su-dung</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+</urlset>

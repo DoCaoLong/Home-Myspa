@@ -1,0 +1,44 @@
+{
+	"description": "The CodeIgniter framework",
+	"name": "codeigniter/framework",
+	"type": "project",
+	"homepage": "https://codeigniter.com",
+	"license": "MIT",
+	"support": {
+		"forum": "http://forum.codeigniter.com/",
+		"wiki": "https://github.com/bcit-ci/CodeIgniter/wiki",
+		"irc": "irc://irc.freenode.net/codeigniter",
+		"source": "https://github.com/bcit-ci/CodeIgniter"
+	},
+	"config": {
+		"platform": {
+			"php": "7.0"
+		},
+		"platform-check": false
+	},
+	"scripts": {
+		"post-root-package-install": [
+			"@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
+			"@php -r \"file_exists('.htaccess') || copy('.htaccess.example', '.htaccess');\"",
+			"@php -r \"file_exists('system/core/DomainHandler.php') || copy('system/core/DomainHandler.php.example', 'system/core/DomainHandler.php');\""
+		]
+	},
+	"require": {
+		"php": ">=7.0",
+		"box/spout": "2.7.3",
+		"vlucas/phpdotenv": "3.6",
+		"ext-json": "*",
+		"ext-curl": "*",
+		"ext-openssl": "*",
+		"ext-mbstring": "*",
+		"guzzlehttp/guzzle": "~6.0",
+		"phpoffice/phpexcel": "^1.8",
+		"textalk/websocket": "1.2.*"
+	},
+	"require-dev": {
+		"mikey179/vfsstream": "1.1.*"
+	},
+	"suggest": {
+		"paragonie/random_compat": "Provides better randomness in PHP 5.x"
+	}
+}

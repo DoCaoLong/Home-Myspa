@@ -1,0 +1,124 @@
+.mobile-banner-image {
+    display: none;
+}
+.banner-myspa {
+    background: url("../../images/Image-landing-page-tong-hop/banner/phan-mem-quan-ly-spa/banner.png")
+        center;
+    background-color: rgba(0, 0, 0, 0);
+    background-size: auto;
+    background-size: cover;
+    height: 100vh;
+    /* max-height: 762px; */
+    display: flex;
+}
+.banner-myspa .home-text {
+    margin: auto;
+}
+.quicksan-text-md {
+    font-family: Quicksand;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.h1-cus-size {
+    font-family: Montserrat, sans-serif;
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 700;
+    color: #fff;
+    text-align: left;
+    display: inline-block;
+    max-width: 600px;
+}
+.text-primary-demo {
+    color: var(--purple);
+}
+.home-text ul {
+    list-style: none outside;
+}
+.home-text ul.text-under-h1 {
+    padding-left: 0;
+    margin-top: 24px;
+}
+.home-text ul.text-under-h1 li {
+    font-weight: 600;
+}
+.custext-software {
+    text-align: left !important;
+}
+.home-text .container:nth-child(2) {
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.text-secondary-demo {
+    color: var(--green);
+}
+.btn-submit-landing-page.green {
+    background: var(--green);
+    color: #fff;
+    border: none;
+}
+.btn-submit-landing-page {
+    border-radius: 26px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    max-width: unset;
+    width: max-content;
+    padding: 10px 26px;
+    text-align: center;
+    background: #fff;
+    letter-spacing: 2px;
+    position: relative;
+    -webkit-transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
+}
+.flex-box {
+    display: flex;
+}
+.banner-register-description {
+    margin-left: 20px;
+    font-weight: 600;
+}
+.home-text .text-center-mobile {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 991.98px) {
+    .mobile-banner-image {
+        display: block;
+    }
+    .mobile-banner-image > img {
+        object-fit: contain;
+        width: 100%;
+    }
+    .banner-myspa .home-text {
+        position: absolute;
+        inset: 0;
+        padding-top: 80px;
+        justify-content: unset;
+    }
+    .btn-contain {
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-myspa .home-text,
+    .home-text ul.text-under-h1,
+    .home-text .container:nth-child(2),
+    .h1-cus-size {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .custext-software {
+        font-size: 13px !important;
+    }
+    #manage_func h3.fontsize-14 {
+        font-size: 14px !important;
+    }
+}

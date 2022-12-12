@@ -1,0 +1,9 @@
+.fc-event, .fc-event:hover{
+    background-color: #7266BA;
+}
+.fc-event, .fc-event-dot{
+    background-color: #7266BA;
+}
+.fc-event{
+    border-color:#FFF;
+}

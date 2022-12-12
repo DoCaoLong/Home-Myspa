@@ -1,0 +1,179 @@
+.modal-lg {
+    background: #7161ba;
+}
+
+.modal-body {
+    display: inline-block;
+    width: 100%;
+}
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    counter-reset: step;
+}
+
+#msform {
+    text-align: center;
+}
+
+#progressbar li {
+    list-style-type: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 9px;
+    width: 33.33%;
+    float: left;
+    position: relative;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+#progressbar li.active:first-child::after {
+    background: #fff;
+    color: #333;
+    width: max-content;
+}
+
+#progressbar li.active::after,
+#progressbar li.active::before {
+    background: #abd373;
+    color: #fff;
+}
+
+#progressbar li::before {
+    content: counter(step);
+    counter-increment: step;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    display: block;
+    font-size: 12px;
+    color: #333;
+    background: #fff;
+    border-radius: 25px;
+    margin: 0 auto 10px auto;
+    position: relative;
+    z-index: 2;
+    padding: 0 8px;
+}
+
+#progressbar li::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    left: -50%;
+    top: 11px;
+    z-index: 1;
+}
+
+#msform fieldset {
+    background: #fff;
+    border: 0 none;
+    border-radius: 0;
+    box-shadow: 0 0 15px 1px rgb(0 0 0 / 40%);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 10%;
+    position: relative;
+}
+#brandapp_modal .modal-content {
+    height: 100vh;
+}
+#msform fieldset:not(:first-of-type) {
+    display: none;
+}
+
+.modal-content {
+    width: 100%;
+    height: fit-content;
+    background-color: #7161ba !important;
+}
+
+.modal.fade .modal-dialog {
+    margin: auto;
+    /* height: 80vh; */
+    background: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.fs-title {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.fs-subtitle {
+    font-weight: 400;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#msform input,
+#msform textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #2c3e50;
+    font-size: 13px;
+}
+
+#msform .action-button,
+.app-design#msform .action-button {
+    width: 100px;
+    background: #abd373;
+    font-weight: 700;
+    color: #fff;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+
+#msform input,
+#msform textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #2c3e50;
+    font-size: 13px;
+}
+
+#msform .action-button-previous,
+.app-design#msform .action-button-previous {
+    width: 100px;
+    background: #c5c5f1;
+    font-weight: 700;
+    color: #fff;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+
+@media screen and (max-width: 1023.98px) {
+    #brandapp_modal .modal-content {
+        height: 65vh;
+    }
+}
+@media screen and (max-width: 767px) {
+    #brandapp_modal .modal-content {
+        height: 100vh;
+    }
+}

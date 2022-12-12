@@ -1,0 +1,31 @@
+.app-header-fixed{
+    padding-top:0px;
+}
+.navbar-header,
+.app-footer{
+    display: none !important;
+}
+.app-header-fixed .app-header,
+.navi-wrap,
+.app-aside{
+    display: none !important;
+}
+.app-content,.app-footer{
+    margin-left:0;
+}
+.navbar-nav-mobile{
+    margin: 0 !important;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    display: inline-block;
+}
+.navbar-nav-mobile > li:first-child{
+    float: left;
+    width: 100%;
+}
+.app-content-body{
+    padding-bottom: 0;
+}

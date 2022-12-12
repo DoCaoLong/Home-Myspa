@@ -1,0 +1,231 @@
+.cards_add_more ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0;
+}
+.cards_add_more ul li {
+    margin-bottom: 10px;
+    position: relative;
+}
+.cards_add_more ul li a{
+    width: 100%;
+    text-align: left;
+}
+.content_cards {
+    padding-left: 0;
+    margin-top: 10px;
+}
+.content_cards li {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.title_boards {
+    border: none;
+    background: #E2E4E6;
+    width: 90%;
+}
+.title_boards:focus{
+    background: #fff;
+}
+.show_choose_custom_info {
+    position: absolute;
+    width: 200%;
+    z-index: 1;
+    background: #ebebeb;
+    box-shadow: 1px 1px 1px #868585;
+    padding: 10px;
+}
+.staff_info .info_details {
+    margin-bottom: 10px;
+}
+.kanban-item {
+    cursor: pointer !important;
+    position: relative;
+    font-weight: bold;
+    padding-top: 25px;
+    font-size: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.add_cards_info span{
+    margin-right: 5px;
+}
+.modal_cards_title_change .title_cards{
+    width: 90%;
+    border: none;
+}
+.modal_cards_title_change .title_cards:focus {
+    border: solid 1px #ccc;
+}
+.content_cards_input {
+   border: none;
+    width: 100%;
+}
+.content_cards_input:focus {
+    border: solid 1px #ccc;
+    border-radius: 10px;
+}
+.attention_cards {
+    padding-left: 0;
+    margin-top: 10px;
+}
+.attention_cards li {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.attention_cards_input {
+    border: none;
+    width: 100%;
+}
+.attention_cards_input:focus {
+    border: solid 1px #ccc;
+    border-radius: 10px;
+}
+.comment_info_details {
+    list-style: none;
+    padding-left: 0;
+}
+.comment_info_details li{
+    overflow: hidden;
+    padding: 15px 0;
+    border-bottom: solid 1px #ccc;
+}
+.comment_info_details li .image_info{
+    float: left;
+    width: 10%;
+}
+.comment_info_details li .comment_info{
+    float: left;
+    width: 90%;
+}
+.comment_info_details li .comment_info .name{
+    margin-bottom: 5px;
+}
+.boards_info_more {
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: 13px;
+}
+#modal_remove_boards ul{
+    list-style: none;
+}
+.activity_info_details {
+    list-style: none;
+    padding-left: 0;
+    overflow-y: scroll;
+    height: auto;
+    max-height: 400px;
+}
+.activity_info_details li{
+    overflow: hidden;
+    padding: 15px 0;
+    border-bottom: solid 1px #ccc;
+}
+.activity_info_details li .image_info{
+    float: left;
+    width: 10%;
+}
+.activity_info_details li .activity_info{
+    float: left;
+    width: 90%;
+}
+.activity_info_details li .activity_info .name{
+    margin-bottom: 5px;
+}
+.comment_activity_info li{
+}
+.comment_activity_info li a{
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    color: #000;
+}
+.cards_date {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+}
+.cards_status_info {
+    position: absolute;
+    top: 2px;
+    left: 14px;
+}
+.medical_record_box {
+    margin-left: -5px;
+}
+.medical_record_box .kanban-item {
+    border: solid 1px #ccc;
+    border-radius: 10px;
+    background: #fcfcfc;
+    box-shadow: 1px 1px 1px #9b9b9b;
+    margin-bottom: 20px;
+}
+.customer_control {
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.created_date_cards input {
+    border: none;
+    background: #d9534f;
+    color: #fff;
+    font-weight: bold;
+    padding: 0 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.customer_info a {
+    float: left;
+    margin-right: 10px;
+}
+.customer_info .info_right {
+    float: left;
+}
+.deadline_date_cards input {
+    border: none;
+    background: #ecb400;
+    color: #fff;
+    font-weight: bold;
+    padding: 0 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.deadline_date_cards input::placeholder {
+    color: #fff;
+    opacity: 1; /* Firefox */
+}
+
+.deadline_date_cards input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fff;
+}
+
+.deadline_date_cards input::-ms-input-placeholder { /* Microsoft Edge */
+    color: #fff;
+}
+.itemform {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+#myKanban{
+    clear: both;
+}
+.staff_show {
+    margin-top: 5px;
+}
+.modal_pp {
+    display:    none;
+    position:   fixed;
+    z-index:    1000000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8) url('../img/loading.gif') 50% 50% no-repeat;
+}
+body.loadajax {
+    overflow: hidden;
+}
+body.loadajax .modal_pp {
+    display: block;
+}

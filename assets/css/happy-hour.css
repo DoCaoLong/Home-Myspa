@@ -1,0 +1,77 @@
+.row>div{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.row>div>div,
+.row>div>h2,
+.row>div>h5{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.fee-values{
+	padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fee-values>div{
+	padding-left: 5px;
+	padding-right: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+@media (max-width: 586px) {
+	.fee-values>div{
+		width: 33%;
+	}
+}
+
+@media (max-width: 791px) and (min-width: 587px){
+	.fee-values>div{
+		width: 25%;
+	}
+}
+
+@media (min-width: 792px) {
+	.fee-values>div{
+		width: 20%;
+	}
+}
+
+.btn-add-time > button{
+	width: 100%;
+}
+
+.btn-add-time{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.time-frame{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.time-slider{
+    display: inline-block;
+    width: calc(100% - 10px);
+}
+@media (min-width: 1200px){
+	.time-slider{
+    	margin-top: 30px;
+	}
+}
+.input-group-addon{
+    line-height: 1.4;
+    cursor: pointer;
+}
+.select-day{
+	margin-bottom: 10px;
+}
+.select2-container.form-control{
+	height: auto !important;
+	min-height: 32px;
+}

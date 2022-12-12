@@ -1,0 +1,19 @@
+RewriteEngine On
+RewriteCond %{HTTPS}  !=on
+RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.(.*)$
+RewriteRule ^(.*)$ http://%1/$1 [L,R=301]
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
+
+options -Indexes
+#RedirectMatch 404 /\.git
+
+RewriteEngine On
+RewriteCond %{REQUEST_URI} \/(.git|.htaccess|.env|.example|.log|.gitignore|composer.json|composer.lock) [NC]
+RewriteRule .* - [F,L]

@@ -1,0 +1,84 @@
+$font-Montserrat: "Montserrat";
+$font-Quicksand: "Quicksand";
+
+.text-xxl-Montserrat {
+  font-family: $font-Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 52px;
+}
+.text-md-quicksand {
+  font-family: $font-Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+.text-mmd-quicksand {
+  font-family: $font-Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+.text-md-quicksand-solution {
+  font-family: $font-Quicksand;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+.text-cl-purple {
+  color: $purple-cl;
+}
+.text-cl-black {
+  color: $text-black-cl;
+}
+.text-cl-green {
+  color: $text-green-cl;
+}
+.text-cl-white {
+  color: $white-cl;
+}
+.text-cl-black-app {
+  color: #3b3a40 !important;
+}
+
+.d-flex {
+  display: flex;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-centerX {
+  display: flex;
+  justify-content: center;
+}
+.flex-centerY {
+  display: flex;
+  align-items: center;
+}
+.bg-purple {
+  background-color: $purple-cl;
+}
+
+.center-mid-table {
+  text-align: center;
+  vertical-align: middle;
+}
+.center-left-table {
+  text-align: left;
+  vertical-align: middle;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.position-relative {
+  position: relative;
+}
